@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
 """
 Método de Taylor (ordem N) para PVI: y' = f(x,y), y(a)=y0 em [a,b].
 
 • Gera y', y'', y''', ... simbolicamente com o operador D = d/dx + f*d/dy.
 • Faz passos de Taylor: y_{n+1} = y_n + sum_{k=1..p} (h^k/k!) * y^{(k)}(x_n,y_n)
 • Inclui exemplo: y' = x + y, y(0)=1 em [0,2], compara com solução exata.
-
-Autor: você + ChatGPT :)
 """
 
 from __future__ import annotations
@@ -176,5 +173,4 @@ if __name__ == "__main__":
     for xi, yi in zip(xs[:5], ys[:5]):  # imprime só os 5 primeiros
         print(f"x={xi:.2f}, y≈{yi:.6f}")
 
-    # Rode um exemplo completo com gráficos e análise de erro:
     exemplo()
